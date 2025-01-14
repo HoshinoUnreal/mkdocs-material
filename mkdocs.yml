@@ -62,9 +62,15 @@ plugins:
   - awesome-pages
 
 extra:
-  generator: false
   social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/44911789
+
     - icon: fontawesome/brands/github
-      link: https://example.com/
+      link: https://github.com/HoshinoUnreal
+
+    - icon: material/security
+      link: https://icp.gov.moe/?keyword=20250071
+      name: 萌ICP备20250071号
 
 copyright: Copyright &copy; 2025 星野幻境

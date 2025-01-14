@@ -5,7 +5,7 @@ comments: true
 # SEGATOOLS 通用配置设置
 
 <div align="center">
-  <img src="/assets/segatools.png " alt="Image description">
+  <img src="/assets/segatools.png">
 </div>
 
 !!! warning "观看前必读"
@@ -136,6 +136,8 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
     默认值：`0x0D`（VK_RETURN）
 
     虚拟键码。如果按住此按钮，则模拟的 IC 卡读卡器会模拟其附近的 IC 卡。可以模拟多种不同的 IC 卡；模拟的具体卡片类型取决于配置的卡 ID 文件是否存在。
+
+---
 
 ## **[vfd]**
 控制 VFD GP1232A02A FUTABA 组件的模拟功能。
@@ -366,6 +368,8 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     EEPROM 模拟存储文件的路径。如果该文件不存在，将自动创建并初始化为适当数量的零字节。
 
+---
+
 ## **[gpio]**
 
 配置 AMEX PCIe GPIO（通用输入输出）控制器的模拟。
@@ -478,6 +482,8 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     预留，当前没有任何正式发布的游戏使用。
 
+---
+
 ## **[hwmon]**
 
 配置平台硬件监控驱动程序的模拟实现。真实的驱动程序通过读取 Intel 特定模型寄存器（Model Specific Registers）来监控 CPU 温度，而这一操作仅在内核模式下允许执行。
@@ -490,8 +496,9 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     启用硬件监控 (hwmon) 模拟。禁用此选项可使用真实的硬件监控驱动程序。
 
-## **[jvs]**
+---
 
+## **[jvs]**
 
 配置 AMEX PCIe JVS 控制器的模拟（非 IO 板！）。
 
@@ -503,8 +510,9 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     启用 JVS 端口模拟。禁用此选项可使用真实 AMEX 上的 JVS 端口。
 
-## **[io4]**
+---
 
+## **[io4]**
 
 配置 IO4 板的模拟。相同的设置也适用于 [io3]。
 
@@ -715,6 +723,8 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
     
     设置 Windows 主机名。此名称应为 ALLS MAIN ID，去掉连字符（因为连字符在 Windows 主机名中不是有效字符）。
 
+---
+
 ## **[sram]**
 
 配置 AMEX PCIe 电池供电的 SRAM 模拟。该 SRAM 用于存储账务状态和设置。如果该文件不存在，将自动创建并初始化为适当数量的零字节。
@@ -734,6 +744,8 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
     默认值：`DEVICE\sram.bin`
     
     SRAM 模拟存储文件的路径。
+
+---
 
 ## **[vfs]**
 
