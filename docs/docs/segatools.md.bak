@@ -130,14 +130,12 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     启用 VFD 仿真。禁用则使用真正的 VFD GP1232A02A FUTABA 组件（COM 端口号因游戏而异）。
 
-!!! note ""
-    ### `portNo`
-    默认值：`游戏特定`
+portNo
+默认值：（游戏特定）
 
-    设置用于 VFD 的 COM 端口。
+设置用于 VFD 的 COM 端口。
 
-!!! note ""
-    ### `utfConversion`
-    默认：`0`
+utfConversion
+默认：0
 
-    将 VFD 中的字符串从其各自的编码转换为 UTF，以便控制台输出将在非日语区域显示。
+将 VFD 中的字符串从其各自的编码转换为 UTF，以便控制台输出将在非日语区域显示。
