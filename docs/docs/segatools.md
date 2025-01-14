@@ -2,7 +2,11 @@
 comments: true
 ---
 
-# SEGATOOLS 常见配置项目
+# SEGATOOLS 详细配置项目
+
+<div align="center">
+  <img src="/assets/segatools.png " alt="Image description">
+</div>
 
 !!! warning "观看前必读"
 
@@ -23,13 +27,13 @@ comments: true
 
 ## **配置路径**
 
-配置文件的默认文件路径是`./segatools.ini`。
+配置文件的默认路径是 `./segatools.ini`。
 
-您可以将变量`SEGATOOLS_CONFIG_PATH`修改为其他路径。
+您可以通过修改环境变量 `SEGATOOLS_CONFIG_PATH` 来指定其他路径。
 
-例如，您有另一个start.bat包含以下代码的目录，然后您可以复制segatools.ini到其中，another_config.ini但其中包含不同的 DNS 服务器
+例如，您可以创建一个包含以下代码的 `start.bat` 文件，然后将 `segatools.ini` 复制为 `another_config.ini`，并在其中设置不同的 DNS 主机地址。
 
-``` ini
+``` batch title="cmd"
 set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 ```
 
@@ -37,53 +41,65 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
 ## **[aimeio]**
 
-控制 Aime 读卡器组件的模拟。
+!!! note ""
+
+    ### **`path`**
+
+    指定第三方读卡器驱动程序 DLL 的路径。默认值为空（使用基于文本文件和键盘输入的内置模拟功能）。
+
+    在之前的 Segatools 版本中，这一功能通过替换 Segatools 自带的 `aimeio.dll` 文件来实现。而在最新版本中，Segatools 不再附带单独的 `aimeio.dll` 文件（其功能现已集成到各个挂钩 DLL 中）。
+
+---
+
+## **[aime]**
+
+控制 Aime 读卡器组件的模拟功能。
 
 !!! note ""
 
     ### **`enable`**
 
-    默认：`1`
+    默认值：`1`
 
-    启用 Aime 读卡器组件模拟。禁用则使用原生 SEGA Aime 读卡器（COM 端口号因游戏而异）。
+    启用 Aime 读卡器组件的模拟功能。禁用此选项可使用真实的 SEGA Aime 读卡器（COM 端口号因游戏而异）。
 
 !!! note ""
 
     ### **`portNo`**
 
-    默认值：`游戏特定`
+    默认值：`因游戏而异`
 
-    设置用于 Aime 卡读卡器组件的 COM 端口。
+    设置用于 Aime 读卡器组件的 COM 端口。
 
 !!! note ""
 
     ### **`highBaud`**
 
-    默认：`1`
+    默认值：`1`
 
-    将 Aime 读卡器的波特率设为 115200（而不是 38400）。某些游戏（例如 CHUNITHM）需要此功能，但其他游戏（例如 WACCA）则不需要此功能。
+    启用 Aime 读卡器的高波特率 115200（而非 38400）。某些游戏（如 CHUNITHM）需要此设置，而其他游戏（如 WACCA）则不需要。
 
 !!! note ""
 
     ### **`gen`**
 
-    默认：`1`
+    默认值：`1`
 
-    生成 Aime 读卡器的型号信息，这也会改变为游戏提供的 LED 信息。
+    更改 Aime 读卡器的版本，这也会改变游戏中提供的 LED 信息。
 
-    1: TN32MSEC003S H/W 版本 3.0 / TN32MSEC003S F/W 版本 1.2
+    1. TN32MSEC003S H/W 版本 3.0 / TN32MSEC003S F/W 版本 1.2
 
-    2：837-15286 / 94
+    2. 837-15286 / 94
 
-    3：837-15396 / 94
+    3. 837-15396 / 94
 
 !!! note ""
 
     ### **`aimePath`**
 
-    默认：`DEVICE\aime.txt`
+    默认值：`DEVICE\aime.txt`
 
-    包含 Aime 卡ID的文本文件的路径。
+    指向包含经典 Aime IC 卡 ID 的文本文件路径。
 
     !!! warning "注意"
 
@@ -93,51 +109,104 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     ### **`aimeGen`**
 
-    默认：`1`
+    默认值：`1`
 
-    如果文件 aimePath 不存在，是否生成随机 Aime 卡ID。
+    如果指定路径 `aimePath` 的文件不存在，是否生成一个随机的 Aime ID。
 
 !!! note ""
 
     ### **`felicaPath`**
 
-    默认：`DEVICE\felica.txt`
+    默认值：`DEVICE\felica.txt`
 
-    包含 FeliCa 电子现金卡 IDm 序列号的文本文件的路径。
+    指向包含 FeliCa 电子现金卡 IDm 序列号的文本文件路径。
 
 !!! note ""
 
     ### **`felicaGen`**
 
-    默认：`0`
+    默认值：`0`
 
-    如果文件 felicaPath 不存在，是否生成随机 FeliCa ID。
+    如果指定路径 `felicaPath` 的文件不存在，是否生成一个随机的 FeliCa ID。
 
 !!! note ""
 
     ### **`scan`**
 
-    默认：`0x0D`（VK_RETURN）
+    默认值：`0x0D`（VK_RETURN）
 
-    虚拟键代码。如果按住此按钮，则模拟 IC 卡读取器将模拟其附近的 IC 卡。可以模拟各种不同的 IC 卡；模拟的卡的具体选择取决于配置的卡 ID 文件是否存在。
+    虚拟键码。如果按住此按钮，则模拟的 IC 卡读卡器会模拟其附近的 IC 卡。可以模拟多种不同的 IC 卡；模拟的具体卡片类型取决于配置的卡 ID 文件是否存在。
 
 ## **[vfd]**
-控制 VFD GP1232A02A FUTABA 组件的模拟。
+控制 VFD GP1232A02A FUTABA 组件的模拟功能。
 
 !!! note ""
-    ### `enable`
-    默认：`1`
 
-    启用 VFD 仿真。禁用则使用真正的 VFD GP1232A02A FUTABA 组件（COM 端口号因游戏而异）。
+    ### **`enable`**
+    默认值：`1`
 
-!!! note ""
-    ### `portNo`
-    默认值：`游戏特定`
-
-    设置用于 VFD 的 COM 端口。
+    启用 VFD 模拟功能。禁用此选项可使用真实的 VFD GP1232A02A FUTABA 组件（COM 端口号因游戏而异）。
 
 !!! note ""
-    ### `utfConversion`
-    默认：`0`
 
-    将 VFD 中的字符串从其各自的编码转换为 UTF，以便控制台输出将在非日语区域显示。
+    ### **`portNo`**
+
+    默认值：`因游戏而异`
+
+    设置用于 VFD 组件的 COM 端口。
+
+!!! note ""
+
+    ### **`utfConversion`**
+
+    默认值：`0`
+
+    将 VFD 中的字符串从各自的编码转换为 UTF，这样控制台输出在非日本区域设置下会正确显示。
+
+---
+
+## **[amvideo]**
+
+控制内置于 Segatools 的 amvideo.dll 模拟程序。这个程序通常存在于 SEGA 操作系统镜像中，负责更改屏幕分辨率和方向。
+
+!!! note ""
+
+    ### **`enable`**
+
+    默认值：`1`
+
+    启用 amvideo.dll 模拟程序。禁用此选项可使用真实的 amvideo.dll 文件。请注意，您必须安装正确的注册表设置，并且必须使用与您的 GPU 供应商匹配的 amvideo.dll 版本（因为这些 DLL 使用供应商特定的 API）。
+
+---
+
+## **[clock]**
+
+控制 Windows 时间 API 的钩子。
+
+!!! note ""
+
+    ### **`timezone`**
+
+    默认值：`1`
+
+    将系统时区设置为 JST（日本标准时间）。如果系统时区不是 JST，SEGA 游戏可能会出现奇怪的故障。除非存在实现上的 bug，否则不应禁用此钩子，但如果需要，仍然提供了禁用的选项。
+
+!!! note ""
+
+    ### **`timewarp`**
+
+    默认值：`0`
+
+    实验性的时间扭曲钩子，用于跳过硬编码的服务器维护期间。这会导致游戏内报告不正确的时间。
+
+    !!! example "实验性功能注意"
+
+        针对这个问题已经有更好的解决方案，且此功能可能很快会被移除。
+
+!!! note ""
+
+    ### **`writeable`**
+
+    默认值：`0`
+    
+    允许游戏调整系统时钟和时区设置。通常情况下应保持为 0，但如果需要，提供了此选项。
