@@ -12,7 +12,7 @@
 
 ???+ abstract "公告"
 
-    **2025/1/14** 新增文章 [SEGATOOLS 详细配置项目](docs/segatools.md)
+    **2025/1/14** 新增文章 [SEGATOOLS 通用配置设置](docs/segatools.md)
 
     **2025/1/13** 引入评论系统、增设首页公告栏
 
