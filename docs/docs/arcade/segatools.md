@@ -8,7 +8,7 @@ comments: true
   <img src="/assets/segatools.png">
 </div>
 
-!!! warning "观看前必读"
+!!! warning "阅读前必看"
 
     本文档系对 [TeamTofuShop/segatools](https://gitea.tendokyu.moe/TeamTofuShop/segatools) 的配置文档进行翻译并附带笔者个人理解的产物。
 
@@ -18,9 +18,9 @@ comments: true
 
 !!! info "本页可发表评论，如有问题、反馈、评价等，欢迎发表评论。"
 
-!!! info "CHUNITHM 专用控制器用户必读"
+!!! info "CHUNITHM 专用控制器用户必看"
 
-    如果您使用的控制器为 TASOLLER (抬手乐) / TASOLLER PLUS (抬手乐普拉斯) / ZhouSensor (大四) 的其中一种或者几种，请使用 fufubot 版本的 Segatools！
+    如果您使用的控制器为 `TASOLLER (抬手乐)` / `TASOLLER PLUS (抬手乐普拉斯)` / `ZhouSensor (大四)` 的其中一种或者几种，请使用 fufubot 版本的 Segatools！
 
 此文档描述了适用于所有游戏的 Segatools 配置设置。
 

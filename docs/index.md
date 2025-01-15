@@ -1,7 +1,3 @@
----
-title: 首页
----
-
 # 欢迎
 
 <div align="center">

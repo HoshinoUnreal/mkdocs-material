@@ -65,9 +65,17 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
 
-plugins:
-  - search
-  - awesome-pages 
+nav:
+  - 主页: index.md
+  - 资源中心: download.md
+  - 技术文档: 
+    - 街机技术文档: 
+      - SEGATOOLS 通用配置设置: docs/arcade/segatools.md
+
+
+# plugins:
+#  - search
+#  - awesome-pages
 
 extra:
   social:
