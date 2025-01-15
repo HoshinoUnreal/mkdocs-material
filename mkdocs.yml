@@ -21,6 +21,7 @@ theme:
     - navigation.instant.progress
     - navigation.path
     - navigation.top
+    - toc.follow
   palette: 
     # 自动切换
     - media: "(prefers-color-scheme)"
