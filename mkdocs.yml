@@ -72,11 +72,6 @@ nav:
     - 街机技术文档: 
       - SEGATOOLS 通用配置设置: docs/arcade/segatools.md
 
-
-# plugins:
-#  - search
-#  - awesome-pages
-
 extra:
   social:
     - icon: fontawesome/brands/bilibili
