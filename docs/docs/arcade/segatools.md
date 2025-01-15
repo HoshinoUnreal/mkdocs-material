@@ -12,13 +12,15 @@ comments: true
 
     本文档系对 [TeamTofuShop/segatools](https://gitea.tendokyu.moe/TeamTofuShop/segatools) 的配置文档进行翻译并附带笔者个人理解的产物。
 
-    文档说明可能会因为笔者的理解能力而产生误差。
+    **文档说明可能会因为笔者的理解能力而产生误差。**
     
     如果您对文档内容有疑问，欢迎访问[原文链接](https://gitea.tendokyu.moe/TeamTofuShop/segatools/src/branch/develop/doc/config/common.md)或下方评论区讨论！
 
-!!! info "TASOLLER (抬手乐) / TASOLLER PLUS (抬手乐普拉斯) / ZhouSensor (大四) 用户必读"
+!!! info "本页可发表评论，如有问题、反馈、评价等，欢迎发表评论。"
 
-    如果您使用的控制器为TASOLLER（抬手乐）/TASOLLER PLUS（抬手乐普拉斯）/ZhouSensor（大四）的其中一种或者几种，请使用 fufubot 版本的 Segatools！
+!!! info "CHUNITHM 专用控制器用户必读"
+
+    如果您使用的控制器为 TASOLLER (抬手乐) / TASOLLER PLUS (抬手乐普拉斯) / ZhouSensor (大四) 的其中一种或者几种，请使用 fufubot 版本的 Segatools！
 
 此文档描述了适用于所有游戏的 Segatools 配置设置。
 
@@ -87,11 +89,12 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     更改 Aime 读卡器的版本，这也会改变游戏中提供的 LED 信息。
 
-    - 1: TN32MSEC003S H/W Ver3.0 / TN32MSEC003S F/W Ver1.2
+    | 代码 | 型号                                              |
+    |------|---------------------------------------------------|
+    | 1    | TN32MSEC003S H/W Ver3.0 / TN32MSEC003S F/W Ver1.2 |
+    | 2    | 837-15286 / 94                                    |
+    | 3    | 837-15396 / 94                                    |
 
-    - 2: 837-15286 / 94
-
-    - 3: 837-15396 / 94
 
 !!! note ""
 
@@ -308,7 +311,11 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
 ## **[ds]**
 
-控制 AMEX PCIe 板上 "DS（Dallas Semiconductor）EEPROM" 芯片的模拟。这是一个小型（32 字节）的 EEPROM，包含序列号和区域代码信息。除非在 Sega Nu 的初始工厂配置过程中，否则通常不会对其进行写操作。
+控制 AMEX PCIe 板上 "DS（Dallas Semiconductor）EEPROM" 芯片的模拟。这是一个小型（32 字节）的 EEPROM，包含序列号和区域代码信息。
+
+!!! warning "注意"
+
+    除非在 Sega Nu 的初始工厂配置过程中，否则通常不会对其进行写操作。
 
 !!! note ""
 
@@ -326,13 +333,13 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     AMEX 板的区域代码。看起来这应该是一个位掩码（bit mask）？
 
-    - 1: Japan
+    | 代码 | 区域                        |
+    |------|-----------------------------|
+    | 1    | Japan                       |
+    | 2    | USA？（废弃代码，不再使用） |
+    | 4    | Export                      |
+    | 8    | China                       |
 
-    - 2: USA？（废弃代码，不再使用）
-
-    - 4: Export
-
-    - 8: China
 
 !!! note ""
 
@@ -342,9 +349,12 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     "MAIN ID" 序列号。前三个字符是硬件系列：
 
-    - AAV: Nu-series
-    - AAW: NuSX-series
-    - ACA: ALLS-series
+    | 代码 | 平台        |
+    |------|-------------|
+    | AAV  | Nu-series   |
+    | AAW  | NuSX-series |
+    | ACA  | ALLS-series |
+
 
 ---
 
@@ -406,9 +416,11 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     因游戏而异，但通常控制“分发服务器”设置。必须将机柜路由器上的恰好一台游戏机设置为服务器模式。
 
-    - 0：客户端
+    | 代码 | 模式   |
+    |------|--------|
+    | 0    | 客户端 |
+    | 1    | 服务器 |
 
-    - 1：服务器
 
 !!! note ""
 
@@ -418,9 +430,11 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     用于设置 CHUNITHM 的显示器类型。
 
-    - 0: 120fps
+    | 代码 | 类型   |
+    |------|--------|
+    | 0    | 120fps |
+    | 1    | 60fps  |
 
-    - 1: 60fps
     
     也用于《马里奥与索尼克》配置机柜 ID，或者可能也用于其他游戏。
 
@@ -432,9 +446,11 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     用于设置 CHUNITHM 的 Aime 读卡器硬件类型。
 
-    - 0: SP
+    | 代码 | 类型 |
+    |------|------|
+    | 0    | SP   |
+    | 1    | CVT  |
 
-    - 1: CVT
     
     用于《马里奥与索尼克》配置机柜 ID，或者可能也用于其他游戏。
 
@@ -446,9 +462,11 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     屏幕方向。仅在 Nu 系统启动程序中使用。
 
-    - 0：横向/YOKO
+    | 代码 | 屏幕方向  |
+    |------|-----------|
+    | 0    | 横向/YOKO |
+    | 1    | 纵向/TATE |
 
-    - 1：纵向/TATE
 
 !!! note ""
 
@@ -458,21 +476,17 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     屏幕分辨率。仅在 Nu 系统启动程序中使用。
 
-    - 000: 不修改
-    
-    - 100: 640x480
-    
-    - 010: 1024x600
-    
-    - 110: 1024x768
-    
-    - 001: 1280x720
-    
-    - 101: 1280x1024
-    
-    - 110: 1360x768
-    
-    - 111: 1920x1080
+    | 代码 | 分辨率    |
+    |------|-----------|
+    | 000  | 不修改    |
+    | 100  | 640x480   |
+    | 010  | 1024x600  |
+    | 110  | 1024x768  |
+    | 001  | 1280x720  |
+    | 101  | 1280x1024 |
+    | 110  | 1360x768  |
+    | 111  | 1920x1080 |
+
 
 !!! note ""
 
@@ -586,17 +600,17 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     覆盖游戏的四字符平台代码（例如，Nu 2 的平台代码是 AAV2）。实际上，这应该是一个单独的三字符 platformId 和整数 modelType 设置，但为了方便起见，它们在此合并。有效值包括：
 
-    | 平台代码      | 平台型号      |
-    | -----------  | -----------  |
-    | AAV0       | Nu 1 (Project DIVA)        |
-    | AAV1    | Nu 1.1 (CHUNITHM)         |
-    | AAV2    | Nu 2 (Initial D Zero)        |
-    | AAW0    | NuSX 1      |
-    | AAW1    | NuSX 1.1       |
-    | ACA0    | ALLS UX        |
-    | ACA1    | ALLS HX        |
-    | ACA2    | ALLS UX (without dedicated GPU)     |
-    | ACA4    | ALLS MX      |
+    | 平台代码 | 平台型号                    |
+    |----------|-----------------------------|
+    | AAV0     | Nu 1 （初音未来：歌姬计划） |
+    | AAV1     | Nu 1.1 （CHUNITHM）         |
+    | AAV2     | Nu 2 （头文字D Zero）       |
+    | AAW0     | NuSX 1                      |
+    | AAW1     | NuSX 1.1                    |
+    | ACA0     | ALLS UX                     |
+    | ACA1     | ALLS HX                     |
+    | ACA2     | ALLS UX （无专用GPU）       |
+    | ACA4     | ALLS MX                     |
 
 !!! note ""
 
@@ -606,10 +620,13 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     覆盖密钥芯片的区域代码。大多数游戏似乎关注的是 DS EEPROM 区域代码而不是密钥芯片的区域代码，这个区域代码看起来是一个位掩码，用于控制该密钥芯片被授权使用的 Nu PCB 区域代码。因此，它可能只影响系统软件，而不会影响游戏软件。位值为：
 
-    - 1: JPN: 日本
-    - 2: USA （未使用）
-    - 3: EXP: 日本海外 （亚洲市场）
-    - 4: CHS: 中国大陆 （简体中文?）
+    | 区域代码 | 区域                         |
+    |----------|------------------------------|
+    | 1        | JPN：日本                    |
+    | 2        | USA：美国 （未使用）         |
+    | 3        | EXP：日本海外 （亚洲市场）   |
+    | 4        | CHS：中国大陆 （简体中文？） |
+
 
 !!! note ""
 
@@ -635,13 +652,13 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     设置密钥芯片的计费“类型”。该类型决定了游戏制作商与 SEGA 之间是否以及如何进行收益分成。一些游戏可能要求使用不同于 1 的类型（例如，《crossbeats REV.》需要计费类型 2），因此如果有这个问题，提供了此选项。计费类型如下：
 
-    - 0: 没有计费？
+    | 代码 | 计费类型    |
+    |------|-------------|
+    | 1    | 没有计费？  |
+    | 2    | 计费类型 A  |
+    | 3    | 计费类型 B1 |
+    | 4    | 计费类型 B2 |
 
-    - 1: 计费类型 A
-
-    - 2: 计费类型 B1
-
-    - 3: 计费类型 B2
 
 !!! note ""
 

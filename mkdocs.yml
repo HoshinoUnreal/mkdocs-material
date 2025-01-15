@@ -15,6 +15,7 @@ theme:
     - content.code.select
     - content.code.copy
     - content.code.annotate
+    - content.tooltips
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
@@ -46,6 +47,7 @@ theme:
       accent: pink
 
 markdown_extensions:
+  - abbr
   - attr_list
   - admonition
   - pymdownx.details
@@ -64,7 +66,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - awesome-pages
+  - awesome-pages 
 
 extra:
   social:
