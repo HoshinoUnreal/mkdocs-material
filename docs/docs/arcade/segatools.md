@@ -43,6 +43,8 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
 ## **[aimeio]**
 
+控制读卡器驱动程序。
+
 !!! note ""
 
     ### **`path`**
@@ -102,11 +104,15 @@ set SEGATOOLS_CONFIG_PATH=.\another_config.ini
 
     默认值：`DEVICE\aime.txt`
 
-    指向包含经典 Aime IC 卡 ID 的文本文件路径。
+    指向包含经典 Aime IC 卡 ACCESS CODE 的文本文件路径。
 
     !!! warning "注意"
 
-        Aime 卡ID为20位阿拉伯数字。
+        Aime 卡 ACCESS CODE 为20位阿拉伯数字，不包含数组之间的空格。
+
+        !!! example "例如"
+
+            1234 5678 9012 3456 7890
 
 !!! note ""
 
