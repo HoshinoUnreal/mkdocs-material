@@ -1,0 +1,3133 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://unreal-network.tech/docs/arcade/segatools/">
+      
+      
+        <link rel="prev" href="../../../download/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>SEGATOOLS 通用配置设置 - 幻境技术攻略站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 11h-2V5h2m0 10h-2v-2h2m7-11H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#segatools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="幻境技术攻略站" class="md-header__button md-logo" aria-label="幻境技术攻略站" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            幻境技术攻略站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SEGATOOLS 通用配置设置
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="跟随系统"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="跟随系统" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="pink"  aria-label="浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="浅色模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="pink"  aria-label="深色模式"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="深色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="幻境技术攻略站" class="md-nav__button md-logo" aria-label="幻境技术攻略站" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    幻境技术攻略站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    资源中心
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    技术文档
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            技术文档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    街机技术文档
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            街机技术文档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SEGATOOLS 通用配置设置
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SEGATOOLS 通用配置设置
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置路径
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aimeio" class="md-nav__link">
+    <span class="md-ellipsis">
+      [aimeio]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[aimeio]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    <span class="md-ellipsis">
+      path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aime" class="md-nav__link">
+    <span class="md-ellipsis">
+      [aime]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[aime]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portno" class="md-nav__link">
+    <span class="md-ellipsis">
+      portNo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highbaud" class="md-nav__link">
+    <span class="md-ellipsis">
+      highBaud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gen" class="md-nav__link">
+    <span class="md-ellipsis">
+      gen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimepath" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimePath
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimeGen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#felicapath" class="md-nav__link">
+    <span class="md-ellipsis">
+      felicaPath
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#felicagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      felicaGen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      scan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vfd" class="md-nav__link">
+    <span class="md-ellipsis">
+      [vfd]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[vfd]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portno_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      portNo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utfconversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      utfConversion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amvideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      [amvideo]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[amvideo]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      [clock]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[clock]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      timezone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timewarp" class="md-nav__link">
+    <span class="md-ellipsis">
+      timewarp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writeable" class="md-nav__link">
+    <span class="md-ellipsis">
+      writeable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      [dns]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[dns]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      default
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title" class="md-nav__link">
+    <span class="md-ellipsis">
+      title
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#router" class="md-nav__link">
+    <span class="md-ellipsis">
+      router
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      startup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      billing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimedb" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimedb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacehost" class="md-nav__link">
+    <span class="md-ellipsis">
+      replaceHost
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startupport" class="md-nav__link">
+    <span class="md-ellipsis">
+      startupPort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingport" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingPort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimedbport" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimedbPort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ds" class="md-nav__link">
+    <span class="md-ellipsis">
+      [ds]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[ds]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region" class="md-nav__link">
+    <span class="md-ellipsis">
+      region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialno" class="md-nav__link">
+    <span class="md-ellipsis">
+      serialNo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eeprom" class="md-nav__link">
+    <span class="md-ellipsis">
+      [eeprom]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[eeprom]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      [gpio]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[gpio]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw1" class="md-nav__link">
+    <span class="md-ellipsis">
+      sw1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw2" class="md-nav__link">
+    <span class="md-ellipsis">
+      sw2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw1" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw2" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw3" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw4" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw567" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw5,6,7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw8" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw8
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hwmon" class="md-nav__link">
+    <span class="md-ellipsis">
+      [hwmon]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[hwmon]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      [jvs]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[jvs]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io4" class="md-nav__link">
+    <span class="md-ellipsis">
+      [io4]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[io4]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    <span class="md-ellipsis">
+      test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    <span class="md-ellipsis">
+      service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coin" class="md-nav__link">
+    <span class="md-ellipsis">
+      coin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keychip" class="md-nav__link">
+    <span class="md-ellipsis">
+      [keychip]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[keychip]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      id
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gameid" class="md-nav__link">
+    <span class="md-ellipsis">
+      gameId
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platformid" class="md-nav__link">
+    <span class="md-ellipsis">
+      platformId
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingca" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingCa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingpub" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingPub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemflag" class="md-nav__link">
+    <span class="md-ellipsis">
+      systemFlag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      subnet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      [netenv]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[netenv]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addrsuffix" class="md-nav__link">
+    <span class="md-ellipsis">
+      addrSuffix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routersuffix" class="md-nav__link">
+    <span class="md-ellipsis">
+      routerSuffix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macaddr" class="md-nav__link">
+    <span class="md-ellipsis">
+      macAddr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcbid" class="md-nav__link">
+    <span class="md-ellipsis">
+      [pcbid]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[pcbid]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialno_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      serialNo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      [sram]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[sram]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      [vfs]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[vfs]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      amfs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      appdata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option" class="md-nav__link">
+    <span class="md-ellipsis">
+      option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置路径
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aimeio" class="md-nav__link">
+    <span class="md-ellipsis">
+      [aimeio]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[aimeio]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    <span class="md-ellipsis">
+      path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aime" class="md-nav__link">
+    <span class="md-ellipsis">
+      [aime]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[aime]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portno" class="md-nav__link">
+    <span class="md-ellipsis">
+      portNo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highbaud" class="md-nav__link">
+    <span class="md-ellipsis">
+      highBaud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gen" class="md-nav__link">
+    <span class="md-ellipsis">
+      gen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimepath" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimePath
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimeGen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#felicapath" class="md-nav__link">
+    <span class="md-ellipsis">
+      felicaPath
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#felicagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      felicaGen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      scan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vfd" class="md-nav__link">
+    <span class="md-ellipsis">
+      [vfd]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[vfd]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portno_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      portNo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utfconversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      utfConversion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amvideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      [amvideo]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[amvideo]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      [clock]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[clock]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      timezone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timewarp" class="md-nav__link">
+    <span class="md-ellipsis">
+      timewarp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writeable" class="md-nav__link">
+    <span class="md-ellipsis">
+      writeable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      [dns]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[dns]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      default
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title" class="md-nav__link">
+    <span class="md-ellipsis">
+      title
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#router" class="md-nav__link">
+    <span class="md-ellipsis">
+      router
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      startup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      billing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimedb" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimedb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacehost" class="md-nav__link">
+    <span class="md-ellipsis">
+      replaceHost
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startupport" class="md-nav__link">
+    <span class="md-ellipsis">
+      startupPort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingport" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingPort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aimedbport" class="md-nav__link">
+    <span class="md-ellipsis">
+      aimedbPort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ds" class="md-nav__link">
+    <span class="md-ellipsis">
+      [ds]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[ds]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region" class="md-nav__link">
+    <span class="md-ellipsis">
+      region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialno" class="md-nav__link">
+    <span class="md-ellipsis">
+      serialNo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eeprom" class="md-nav__link">
+    <span class="md-ellipsis">
+      [eeprom]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[eeprom]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      [gpio]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[gpio]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw1" class="md-nav__link">
+    <span class="md-ellipsis">
+      sw1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw2" class="md-nav__link">
+    <span class="md-ellipsis">
+      sw2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw1" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw2" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw3" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw4" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw567" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw5,6,7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dipsw8" class="md-nav__link">
+    <span class="md-ellipsis">
+      dipsw8
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hwmon" class="md-nav__link">
+    <span class="md-ellipsis">
+      [hwmon]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[hwmon]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jvs" class="md-nav__link">
+    <span class="md-ellipsis">
+      [jvs]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[jvs]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io4" class="md-nav__link">
+    <span class="md-ellipsis">
+      [io4]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[io4]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    <span class="md-ellipsis">
+      test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    <span class="md-ellipsis">
+      service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coin" class="md-nav__link">
+    <span class="md-ellipsis">
+      coin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keychip" class="md-nav__link">
+    <span class="md-ellipsis">
+      [keychip]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[keychip]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      id
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gameid" class="md-nav__link">
+    <span class="md-ellipsis">
+      gameId
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platformid" class="md-nav__link">
+    <span class="md-ellipsis">
+      platformId
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingca" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingCa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingpub" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingPub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billingtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      billingType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemflag" class="md-nav__link">
+    <span class="md-ellipsis">
+      systemFlag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      subnet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      [netenv]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[netenv]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addrsuffix" class="md-nav__link">
+    <span class="md-ellipsis">
+      addrSuffix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routersuffix" class="md-nav__link">
+    <span class="md-ellipsis">
+      routerSuffix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macaddr" class="md-nav__link">
+    <span class="md-ellipsis">
+      macAddr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcbid" class="md-nav__link">
+    <span class="md-ellipsis">
+      [pcbid]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[pcbid]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialno_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      serialNo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sram" class="md-nav__link">
+    <span class="md-ellipsis">
+      [sram]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[sram]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      [vfs]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[vfs]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      amfs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      appdata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option" class="md-nav__link">
+    <span class="md-ellipsis">
+      option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="segatools">SEGATOOLS 通用配置设置</h1>
+<div align="center">
+  <img src="/assets/segatools.png">
+</div>
+
+<div class="admonition warning">
+<p class="admonition-title">阅读前必看</p>
+<p>本文档系对 <a href="https://gitea.tendokyu.moe/TeamTofuShop/segatools">TeamTofuShop/segatools</a> 的配置文档进行翻译并附带笔者个人理解的产物。</p>
+<p><strong>文档说明可能会因为笔者的理解能力而产生误差。</strong></p>
+<p>如果您对文档内容有疑问，欢迎访问<a href="https://gitea.tendokyu.moe/TeamTofuShop/segatools/src/branch/develop/doc/config/common.md">原文链接</a>或下方评论区讨论！</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">本页可发表评论，如有问题、反馈、评价等，欢迎发表评论。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">CHUNITHM 专用控制器用户必看</p>
+<p>如果您使用的控制器为 <code>TASOLLER (抬手乐)</code> / <code>TASOLLER PLUS (抬手乐普拉斯)</code> / <code>ZhouSensor (大四)</code> 的其中一种或者几种，请使用 fufubot 版本的 Segatools！</p>
+</div>
+<p>此文档描述了适用于所有游戏的 Segatools 配置设置。</p>
+<p>键盘绑定设置使用<a href="https://learn.microsoft.com/zh-cn/windows/win32/inputdev/virtual-key-codes">虚拟键码</a>。</p>
+<hr />
+<h2 id="_1"><strong>配置路径</strong></h2>
+<p>配置文件的默认路径是 <code>./segatools.ini</code>。</p>
+<p>您可以通过修改环境变量 <code>SEGATOOLS_CONFIG_PATH</code> 来指定其他路径。</p>
+<p>例如，您可以创建一个包含以下代码的 <code>start.bat</code> 文件，然后将 <code>segatools.ini</code> 复制为 <code>another_config.ini</code>，并在其中设置不同的 DNS 主机地址。</p>
+<div class="language-batch highlight"><span class="filename">cmd</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">set</span> <span class="nv">SEGATOOLS_CONFIG_PATH</span><span class="p">=</span>.\another_config.ini
+</span></code></pre></div>
+<hr />
+<h2 id="aimeio"><strong>[aimeio]</strong></h2>
+<p>控制读卡器驱动程序。</p>
+<div class="admonition note">
+<h3 id="path"><strong><code>path</code></strong></h3>
+<p>指定第三方读卡器驱动程序 DLL 的路径。默认值为空（使用基于文本文件和键盘输入的内置模拟功能）。</p>
+<p>在之前的 Segatools 版本中，这一功能通过替换 Segatools 自带的 <code>aimeio.dll</code> 文件来实现。而在最新版本中，Segatools 不再附带单独的 <code>aimeio.dll</code> 文件（其功能现已集成到各个挂钩 DLL 中）。</p>
+</div>
+<hr />
+<h2 id="aime"><strong>[aime]</strong></h2>
+<p>控制 Aime 读卡器组件的模拟功能。</p>
+<div class="admonition note">
+<h3 id="enable"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 Aime 读卡器组件的模拟功能。禁用此选项可使用真实的 SEGA Aime 读卡器（COM 端口号因游戏而异）。</p>
+</div>
+<div class="admonition note">
+<h3 id="portno"><strong><code>portNo</code></strong></h3>
+<p>默认值：<code>因游戏而异</code></p>
+<p>设置用于 Aime 读卡器组件的 COM 端口。</p>
+</div>
+<div class="admonition note">
+<h3 id="highbaud"><strong><code>highBaud</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 Aime 读卡器的高波特率 115200（而非 38400）。某些游戏（如 CHUNITHM）需要此设置，而其他游戏（如 WACCA）则不需要。</p>
+</div>
+<div class="admonition note">
+<h3 id="gen"><strong><code>gen</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>更改 Aime 读卡器的版本，这也会改变游戏中提供的 LED 信息。</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>型号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TN32MSEC003S H/W Ver3.0 / TN32MSEC003S F/W Ver1.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>837-15286 / 94</td>
+</tr>
+<tr>
+<td>3</td>
+<td>837-15396 / 94</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="aimepath"><strong><code>aimePath</code></strong></h3>
+<p>默认值：<code>DEVICE\aime.txt</code></p>
+<p>指向包含经典 Aime IC 卡 ACCESS CODE 的文本文件路径。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>Aime 卡 ACCESS CODE 为20位阿拉伯数字，不包含数组之间的空格。</p>
+<div class="admonition example">
+<p class="admonition-title">例如</p>
+<p>1234 5678 9012 3456 7890</p>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<h3 id="aimegen"><strong><code>aimeGen</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>如果指定路径 <code>aimePath</code> 的文件不存在，是否生成一个随机的 Aime ID。</p>
+</div>
+<div class="admonition note">
+<h3 id="felicapath"><strong><code>felicaPath</code></strong></h3>
+<p>默认值：<code>DEVICE\felica.txt</code></p>
+<p>指向包含 FeliCa 电子现金卡 IDm 序列号的文本文件路径。</p>
+</div>
+<div class="admonition note">
+<h3 id="felicagen"><strong><code>felicaGen</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>如果指定路径 <code>felicaPath</code> 的文件不存在，是否生成一个随机的 FeliCa ID。</p>
+</div>
+<div class="admonition note">
+<h3 id="scan"><strong><code>scan</code></strong></h3>
+<p>默认值：<code>0x0D</code>（VK_RETURN）</p>
+<p>虚拟键码。如果按住此按钮，则模拟的 IC 卡读卡器会模拟其附近的 IC 卡。可以模拟多种不同的 IC 卡；模拟的具体卡片类型取决于配置的卡 ID 文件是否存在。</p>
+</div>
+<hr />
+<h2 id="vfd"><strong>[vfd]</strong></h2>
+<p>控制 VFD GP1232A02A FUTABA 组件的模拟功能。</p>
+<div class="admonition note">
+<h3 id="enable_1"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 VFD 模拟功能。禁用此选项可使用真实的 VFD GP1232A02A FUTABA 组件（COM 端口号因游戏而异）。</p>
+</div>
+<div class="admonition note">
+<h3 id="portno_1"><strong><code>portNo</code></strong></h3>
+<p>默认值：<code>因游戏而异</code></p>
+<p>设置用于 VFD 组件的 COM 端口。</p>
+</div>
+<div class="admonition note">
+<h3 id="utfconversion"><strong><code>utfConversion</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>将 VFD 中的字符串从各自的编码转换为 UTF，这样控制台输出在非日本区域设置下会正确显示。</p>
+</div>
+<hr />
+<h2 id="amvideo"><strong>[amvideo]</strong></h2>
+<p>控制内置于 Segatools 的 amvideo.dll 模拟程序。这个程序通常存在于 SEGA 操作系统镜像中，负责更改屏幕分辨率和方向。</p>
+<div class="admonition note">
+<h3 id="enable_2"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 amvideo.dll 模拟程序。禁用此选项可使用真实的 amvideo.dll 文件。</p>
+<div class="admonition warning">
+<p class="admonition-title">请注意</p>
+<p>您必须安装正确的注册表设置，并且必须使用与您的 GPU 供应商匹配的 <code>amvideo.dll</code> 版本（因为这些 DLL 使用供应商特定的 API）。</p>
+</div>
+</div>
+<hr />
+<h2 id="clock"><strong>[clock]</strong></h2>
+<p>控制 Windows 时间 API 的钩子。</p>
+<div class="admonition note">
+<h3 id="timezone"><strong><code>timezone</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>将系统时区设置为 JST（日本标准时间）。如果系统时区不是 JST，SEGA 游戏可能会出现奇怪的故障。除非存在实现上的 bug，否则不应禁用此钩子，但如果需要，仍然提供了禁用的选项。</p>
+</div>
+<div class="admonition note">
+<h3 id="timewarp"><strong><code>timewarp</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>实验性的时间扭曲钩子，用于跳过硬编码的服务器维护期间。这会导致游戏内报告不正确的时间。</p>
+<div class="admonition example">
+<p class="admonition-title">实验性功能注意</p>
+<p>针对这个问题已经有更好的解决方案，且此功能可能很快会被移除。</p>
+</div>
+</div>
+<div class="admonition note">
+<h3 id="writeable"><strong><code>writeable</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>允许游戏调整系统时钟和时区设置。通常情况下应保持为 0，但如果需要，提供了此选项。</p>
+</div>
+<hr />
+<h2 id="dns"><strong>[dns]</strong></h2>
+<p>控制网络服务器主机名查询的重定向。</p>
+<div class="admonition note">
+<h3 id="default"><strong><code>default</code></strong></h3>
+<p>默认值：<code>localhost</code></p>
+<p>控制所有常见网络服务服务器的主机名，除非下面的特定设置覆盖此项。大多数用户只需要更改此设置。此外，游戏本身会特别检查并拒绝回环地址；此设置需要是局域网或广域网 IP 地址（或解析到该地址的主机名）。</p>
+</div>
+<div class="admonition note">
+<h3 id="title"><strong><code>title</code></strong></h3>
+<p>默认值：<code>title</code></p>
+<p>将其保留为 <code>title</code> 以使用 ALL.Net 返回的标题服务器。为某些游戏（例如 crossbeats REV）重写标题服务器主机名。</p>
+</div>
+<div class="admonition note">
+<h3 id="router"><strong><code>router</code></strong></h3>
+<p>默认值：<code></code> （即使用默认设置中的值）。</p>
+<p>覆盖 tenporouter.loc 和 bbrouter.loc 主机名查询的目标。</p>
+</div>
+<div class="admonition note">
+<h3 id="startup"><strong><code>startup</code></strong></h3>
+<p>默认值：<code></code> （即使用默认设置中的值）。</p>
+<p>覆盖 naominet.jp 主机名查询的目标。</p>
+</div>
+<div class="admonition note">
+<h3 id="billing"><strong><code>billing</code></strong></h3>
+<p>默认值：<code></code> （即使用默认设置中的值）。</p>
+<p>覆盖 ib.naominet.jp 主机名查询的目标。</p>
+</div>
+<div class="admonition note">
+<h3 id="aimedb"><strong><code>aimedb</code></strong></h3>
+<p>默认值：<code></code> （即使用默认设置中的值）。</p>
+<p>覆盖 aime.naominet.jp 主机名查询的目标。</p>
+</div>
+<div class="admonition note">
+<h3 id="replacehost"><strong><code>replaceHost</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>将 HTTP 请求头中的 HOST 字段替换为上述设置。这可能有助于绕过某些地区的网络限制。</p>
+</div>
+<div class="admonition note">
+<h3 id="startupport"><strong><code>startupPort</code></strong></h3>
+<p>默认值：<code>0</code> （即不会执行任何操作）</p>
+<p>覆盖与启动服务器的连接端口。当前的实现会影响所有到端口 80 的 TCP 连接。</p>
+</div>
+<div class="admonition note">
+<h3 id="billingport"><strong><code>billingPort</code></strong></h3>
+<p>默认值：<code>0</code> （即不会执行任何操作）</p>
+<p>覆盖与计费服务器的连接端口。当前的实现会影响所有到端口 8443 的 TCP 连接。</p>
+</div>
+<div class="admonition note">
+<h3 id="aimedbport"><strong><code>aimedbPort</code></strong></h3>
+<p>默认值：<code>0</code> （即不会执行任何操作）</p>
+<p>覆盖与 aimedb 服务器的连接端口。当前的实现会影响所有到端口 22345 的 TCP 连接。</p>
+</div>
+<hr />
+<h2 id="ds"><strong>[ds]</strong></h2>
+<p>控制 AMEX PCIe 板上 "DS（Dallas Semiconductor）EEPROM" 芯片的模拟。这是一个小型（32 字节）的 EEPROM，包含序列号和区域代码信息。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>除非在 Sega Nu 的初始工厂配置过程中，否则通常不会对其进行写操作。</p>
+</div>
+<div class="admonition note">
+<h3 id="enable_3"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 DS EEPROM 模拟。禁用此选项可使用真实 AMEX 上的 DS EEPROM 芯片。</p>
+</div>
+<div class="admonition note">
+<h3 id="region"><strong><code>region</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>AMEX 板的区域代码。看起来这应该是一个位掩码（bit mask）？</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>区域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>2</td>
+<td>USA？（废弃代码，不再使用）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Export</td>
+</tr>
+<tr>
+<td>8</td>
+<td>China</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="serialno"><strong><code>serialNo</code></strong></h3>
+<p>默认值：<code>AAVE-01A99999999</code></p>
+<p>"MAIN ID" 序列号。前三个字符是硬件系列：</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>平台</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAV</td>
+<td>Nu-series</td>
+</tr>
+<tr>
+<td>AAW</td>
+<td>NuSX-series</td>
+</tr>
+<tr>
+<td>ACA</td>
+<td>ALLS-series</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<h2 id="eeprom"><strong>[eeprom]</strong></h2>
+<p>控制 AMEX PCIe 板上大容量 EEPROM 的模拟。该芯片存储状态和配置信息。</p>
+<div class="admonition note">
+<h3 id="enable_4"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用大容量 EEPROM 模拟。禁用此选项可使用真实 AMEX 上的大容量 EEPROM 芯片。</p>
+</div>
+<div class="admonition note">
+<h3 id="path_1"><strong><code>path</code></strong></h3>
+<p>默认值：<code>DEVICE\eeprom.bin</code></p>
+<p>EEPROM 模拟存储文件的路径。如果该文件不存在，将自动创建并初始化为适当数量的零字节。</p>
+</div>
+<hr />
+<h2 id="gpio"><strong>[gpio]</strong></h2>
+<p>配置 AMEX PCIe GPIO（通用输入输出）控制器的模拟。</p>
+<div class="admonition note">
+<h3 id="enable_5"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 GPIO 模拟。禁用此选项可使用真实 AMEX 上的 GPIO 控制器。</p>
+</div>
+<div class="admonition note">
+<h3 id="sw1"><strong><code>sw1</code></strong></h3>
+<p>默认值：<code>0x70</code> (VK_F1)</p>
+<p>Nu 机箱 SW1 按钮（备用测试）的键盘绑定。</p>
+</div>
+<div class="admonition note">
+<h3 id="sw2"><strong><code>sw2</code></strong></h3>
+<p>默认值：<code>0x71</code> (VK_F2)</p>
+<p>Nu 机箱 SW2 按钮（备用服务）的键盘绑定。</p>
+</div>
+<div class="admonition note">
+<h3 id="dipsw1"><strong><code>dipsw1</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>因游戏而异，但通常控制“分发服务器”设置。必须将机柜路由器上的恰好一台游戏机设置为服务器模式。</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>客户端</td>
+</tr>
+<tr>
+<td>1</td>
+<td>服务器</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="dipsw2"><strong><code>dipsw2</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>用于设置 CHUNITHM 的显示器类型。</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>120fps</td>
+</tr>
+<tr>
+<td>1</td>
+<td>60fps</td>
+</tr>
+</tbody>
+</table>
+<p>也用于《马里奥与索尼克》配置机柜 ID，或者可能也用于其他游戏。</p>
+</div>
+<div class="admonition note">
+<h3 id="dipsw3"><strong><code>dipsw3</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>用于设置 CHUNITHM 的 Aime 读卡器硬件类型。</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>SP</td>
+</tr>
+<tr>
+<td>1</td>
+<td>CVT</td>
+</tr>
+</tbody>
+</table>
+<p>用于《马里奥与索尼克》配置机柜 ID，或者可能也用于其他游戏。</p>
+</div>
+<div class="admonition note">
+<h3 id="dipsw4"><strong><code>dipsw4</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>屏幕方向。仅在 Nu 系统启动程序中使用。</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>屏幕方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>横向/YOKO</td>
+</tr>
+<tr>
+<td>1</td>
+<td>纵向/TATE</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="dipsw567"><strong><code>dipsw5,6,7</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>屏幕分辨率。仅在 Nu 系统启动程序中使用。</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>分辨率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>不修改</td>
+</tr>
+<tr>
+<td>100</td>
+<td>640x480</td>
+</tr>
+<tr>
+<td>010</td>
+<td>1024x600</td>
+</tr>
+<tr>
+<td>110</td>
+<td>1024x768</td>
+</tr>
+<tr>
+<td>001</td>
+<td>1280x720</td>
+</tr>
+<tr>
+<td>101</td>
+<td>1280x1024</td>
+</tr>
+<tr>
+<td>110</td>
+<td>1360x768</td>
+</tr>
+<tr>
+<td>111</td>
+<td>1920x1080</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="dipsw8"><strong><code>dipsw8</code></strong></h3>
+<p>默认值：<code>0</code></p>
+<p>预留，当前没有任何正式发布的游戏使用。</p>
+</div>
+<hr />
+<h2 id="hwmon"><strong>[hwmon]</strong></h2>
+<p>配置平台硬件监控驱动程序的模拟实现。真实的驱动程序通过读取 Intel 特定模型寄存器（Model Specific Registers）来监控 CPU 温度，而这一操作仅在内核模式下允许执行。</p>
+<div class="admonition note">
+<h3 id="enable_6"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用硬件监控 (hwmon) 模拟。禁用此选项可使用真实的硬件监控驱动程序。</p>
+</div>
+<hr />
+<h2 id="jvs"><strong>[jvs]</strong></h2>
+<p>配置 AMEX PCIe JVS 控制器的模拟（非 IO 板！）。</p>
+<div class="admonition note">
+<h3 id="enable_7"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 JVS 端口模拟。禁用此选项可使用真实 AMEX 上的 JVS 端口。</p>
+</div>
+<hr />
+<h2 id="io4"><strong>[io4]</strong></h2>
+<p>配置 IO4 板的模拟。相同的设置也适用于 [io3]。</p>
+<div class="admonition note">
+<h3 id="enable_8"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 IO4 端口模拟。禁用此选项可使用真实 ALLS 上的 IO4 端口。</p>
+</div>
+<div class="admonition note">
+<h3 id="test"><strong><code>test</code></strong></h3>
+<p>默认值：<code>0x31</code></p>
+<p>测试按钮的虚拟键码，默认是数字键 <code>1</code> 。</p>
+</div>
+<div class="admonition note">
+<h3 id="service"><strong><code>service</code></strong></h3>
+<p>默认值：<code>0x32</code></p>
+<p>服务按钮的虚拟键码，默认是数字键 <code>2</code> 。</p>
+</div>
+<div class="admonition note">
+<h3 id="coin"><strong><code>coin</code></strong></h3>
+<p>默认值：<code>0x33</code></p>
+<p>用于增加投币计数的键盘按钮，默认是数字键 <code>3</code> 。</p>
+</div>
+<hr />
+<h2 id="keychip"><strong>[keychip]</strong></h2>
+<p>配置密钥芯片（keychip）的模拟。</p>
+<div class="admonition note">
+<h3 id="enable_9"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用密钥芯片模拟。禁用此选项可使用真实的密钥芯片。</p>
+</div>
+<div class="admonition note">
+<h3 id="id"><strong><code>id</code></strong></h3>
+<p>默认值：<code>A69E-01A88888888</code></p>
+<p>密钥芯片序列号。实际中观察到的密钥芯片序列号遵循以下模式：<code>A\d{2}(E|X)-(01|20)[ABCDU]\d{8}</code> 。</p>
+</div>
+<div class="admonition note">
+<h3 id="gameid"><strong><code>gameId</code></strong></h3>
+<p>默认值：<code>因游戏而异</code></p>
+<p>覆盖游戏的四字符型号代码。将其更改为与游戏预期值不同的值可能会导致系统错误。</p>
+</div>
+<div class="admonition note">
+<h3 id="platformid"><strong><code>platformId</code></strong></h3>
+<p>默认值：<code>因游戏而异</code></p>
+<p>覆盖游戏的四字符平台代码（例如，Nu 2 的平台代码是 AAV2）。实际上，这应该是一个单独的三字符 platformId 和整数 modelType 设置，但为了方便起见，它们在此合并。有效值包括：</p>
+<table>
+<thead>
+<tr>
+<th>平台代码</th>
+<th>平台型号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAV0</td>
+<td>Nu 1 （初音未来：歌姬计划）</td>
+</tr>
+<tr>
+<td>AAV1</td>
+<td>Nu 1.1 （CHUNITHM）</td>
+</tr>
+<tr>
+<td>AAV2</td>
+<td>Nu 2 （头文字D Zero）</td>
+</tr>
+<tr>
+<td>AAW0</td>
+<td>NuSX 1</td>
+</tr>
+<tr>
+<td>AAW1</td>
+<td>NuSX 1.1</td>
+</tr>
+<tr>
+<td>ACA0</td>
+<td>ALLS UX</td>
+</tr>
+<tr>
+<td>ACA1</td>
+<td>ALLS HX</td>
+</tr>
+<tr>
+<td>ACA2</td>
+<td>ALLS UX （无专用GPU）</td>
+</tr>
+<tr>
+<td>ACA4</td>
+<td>ALLS MX</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="region_1"><strong><code>region</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>覆盖密钥芯片的区域代码。大多数游戏似乎关注的是 DS EEPROM 区域代码而不是密钥芯片的区域代码，这个区域代码看起来是一个位掩码，用于控制该密钥芯片被授权使用的 Nu PCB 区域代码。因此，它可能只影响系统软件，而不会影响游戏软件。位值为：</p>
+<table>
+<thead>
+<tr>
+<th>区域代码</th>
+<th>区域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JPN：日本</td>
+</tr>
+<tr>
+<td>2</td>
+<td>USA：美国 （未使用）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EXP：日本海外 （亚洲市场）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CHS：中国大陆 （简体中文？）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="billingca"><strong><code>billingCa</code></strong></h3>
+<p>默认值：<code>DEVICE\ca.crt</code></p>
+<p>设置计费证书路径。此路径必须与 SSL 计费服务器使用的路径匹配。DER 格式的证书必须小于 1024 字节，因此必须保持较小。</p>
+</div>
+<div class="admonition note">
+<h3 id="billingpub"><strong><code>billingPub</code></strong></h3>
+<p>默认值：<code>DEVICE\billing.pub</code></p>
+<p>设置实际的密钥芯片 RSA 公钥路径。此公钥必须与计费服务器的私钥 billing.key 匹配，以便解密/加密计费交易。</p>
+</div>
+<div class="admonition note">
+<h3 id="billingtype"><strong><code>billingType</code></strong></h3>
+<p>默认值：<code>DEVICE\ca.crt</code></p>
+<p>设置密钥芯片的计费“类型”。该类型决定了游戏制作商与 SEGA 之间是否以及如何进行收益分成。一些游戏可能要求使用不同于 1 的类型（例如，《crossbeats REV.》需要计费类型 2），因此如果有这个问题，提供了此选项。计费类型如下：</p>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>计费类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>没有计费？</td>
+</tr>
+<tr>
+<td>2</td>
+<td>计费类型 A</td>
+</tr>
+<tr>
+<td>3</td>
+<td>计费类型 B1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>计费类型 B2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="systemflag"><strong><code>systemFlag</code></strong></h3>
+<p>默认值：<code>0x64</code></p>
+<p>一个含义不明确的 8 位位域。最低有效位表示开发者加密狗。更改此值似乎仅对 SEGA AM2 游戏有影响，其他游戏没有明显效果。</p>
+</div>
+<div class="admonition note">
+<h3 id="subnet"><strong><code>subnet</code></strong></h3>
+<p>默认值：<code>192.168.100.0</code></p>
+<p>游戏预期的 LAN IP 范围。前缀长度是硬编码在游戏程序中的：对于某些游戏是 /24，对于其他游戏是 /20。</p>
+</div>
+<hr />
+<h2 id="netenv"><strong>[netenv]</strong></h2>
+<p>配置网络环境虚拟化。该模块有助于绕过游戏的 LAN 环境中的各种限制。</p>
+<div class="admonition note">
+<h3 id="enable_10"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用网络环境虚拟化。如果您希望在局域网中进行对战游戏，可能需要禁用此功能。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>虚拟化的 LAN IP 范围来自模拟的密钥芯片的 <code>subnet</code> 设置。</p>
+</div>
+</div>
+<div class="admonition note">
+<h3 id="addrsuffix"><strong><code>addrSuffix</code></strong></h3>
+<p>默认值：<code>11</code></p>
+<p>虚拟化子网中本地主机 IP 地址的最后一个八位字节（例如，如果密钥芯片的子网是 192.168.32.0 且此值设置为 11，则本地主机的虚拟化 LAN IP 为 192.168.32.11）。</p>
+</div>
+<div class="admonition note">
+<h3 id="routersuffix"><strong><code>routerSuffix</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>虚拟化子网中默认网关 IP 地址的最后一个八位字节。</p>
+</div>
+<div class="admonition note">
+<h3 id="macaddr"><strong><code>macAddr</code></strong></h3>
+<p>默认值：<code>01:02:03:04:05:06</code></p>
+<p>虚拟化以太网适配器的 MAC 地址。确切的值通常不重要。</p>
+</div>
+<hr />
+<h2 id="pcbid"><strong>[pcbid]</strong></h2>
+<p>配置 Windows 主机名虚拟化。ALLS 系列平台不再具有 AMEX 板，因此 MAIN ID 序列号存储在 Windows 主机名中。</p>
+<div class="admonition note">
+<h3 id="enable_11"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 Windows 主机名虚拟化。仅对于 ALLS 平台的游戏需要此功能（因为 ALLS 没有 AMEX 板，且没有 DS EEPROM，因此需要其他方式来存储 PCB 序列号），但对运行在早期硬件上的游戏没有任何负面影响。</p>
+</div>
+<div class="admonition note">
+<h3 id="serialno_1"><strong><code>serialNo</code></strong></h3>
+<p>默认值：<code>ACAE01A99999999</code></p>
+<p>设置 Windows 主机名。此名称应为 ALLS MAIN ID，去掉连字符（因为连字符在 Windows 主机名中不是有效字符）。</p>
+</div>
+<hr />
+<h2 id="sram"><strong>[sram]</strong></h2>
+<p>配置 AMEX PCIe 电池供电的 SRAM 模拟。该 SRAM 用于存储账务状态和设置。如果该文件不存在，将自动创建并初始化为适当数量的零字节。</p>
+<div class="admonition note">
+<h3 id="enable_12"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>启用 SRAM 模拟。禁用此选项可使用真实 AMEX 上的 SRAM。</p>
+</div>
+<div class="admonition note">
+<h3 id="path_2"><strong><code>path</code></strong></h3>
+<p>默认值：<code>DEVICE\sram.bin</code></p>
+<p>SRAM 模拟存储文件的路径。</p>
+</div>
+<hr />
+<h2 id="vfs"><strong>[vfs]</strong></h2>
+<p>配置 Windows 路径重定向钩子。</p>
+<div class="admonition note">
+<h3 id="enable_13"><strong><code>enable</code></strong></h3>
+<p>默认值：<code>1</code></p>
+<p>配置 Windows 路径重定向钩子。</p>
+</div>
+<div class="admonition note">
+<h3 id="amfs"><strong><code>amfs</code></strong></h3>
+<p>默认值：<code></code> （会导致启动错误）</p>
+<p>配置 SEGA AMFS 卷的位置。真实硬件上存储在 E 盘。</p>
+</div>
+<div class="admonition note">
+<h3 id="appdata"><strong><code>appdata</code></strong></h3>
+<p>默认值：<code></code> （会导致启动错误）</p>
+<p>配置 SEGA "APPDATA" 卷的位置（与 Windows 用户的 %APPDATA% 目录无关）。真实硬件上存储在 Y 盘。</p>
+</div>
+<div class="admonition note">
+<h3 id="option"><strong><code>option</code></strong></h3>
+<p>默认值：<code></code></p>
+<p>配置 <code>option</code> 数据挂载点的位置。这个挂载点是可选的（因此可能得名），包含小型空中更新内容的目录。</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-repo="HoshinoUnreal/mkdocs-material"
+  data-repo-id="R_kgDONpK0Gw"
+  data-category="Announcements"
+  data-category-id="DIC_kwDONpK0G84Cl9rQ"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 星野幻境 萌ICP备20250071号
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/44911789" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/HoshinoUnreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://icp.gov.moe/?keyword=20250071" target="_blank" rel="noopener" title="萌ICP备20250071号" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12h7c-.53 4.11-3.28 7.78-7 8.92zH5V6.3l7-3.11M12 1 3 5v6c0 5.55 3.84 10.73 9 12 5.16-1.27 9-6.45 9-12V5z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.select", "content.code.copy", "content.code.annotate", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
